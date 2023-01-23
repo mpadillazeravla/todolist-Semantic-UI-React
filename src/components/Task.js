@@ -15,8 +15,8 @@ export default function Task(props) {
             <Header as="h3" className="header-task">
                 {taskName}
             </Header>
-            <Header as="h5">{idTask}</Header>
-                <Grid center columns={2}>
+            <Header as="h5">ID:<br/>{idTask}</Header>
+                <Grid centered columns={2}>
                 <Grid.Column>
                     <Button color="red" onClick={()=>deleteTask(idTask)}>
                         <Icon name="remove circle"/> Eliminar
